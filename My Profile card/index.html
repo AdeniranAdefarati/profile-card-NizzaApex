@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="profile-card" data-testid="profile-card" role="region" aria-label="User Profile">
+    <header class="profile-header" data-testid="profile-header">
+      <div class="profile-bg"></div>
+      <img src="profile card image.jpeg" alt="Profile picture of Fatanmi Adeniran" class="profile-img" data-testid="profile-image"/>
+    </header>
+
+    <section class="profile-info" data-testid="profile-info">
+        <h1 data-testid="profile-name">Fatanmi Adeniran</h1>
+        <p class="bio" data-testid="profile-bio">
+            I’m a passionate Frontend Developer experienced in HTML, CSS, JavaScript and React.Dedicated to building clean, responsive, and accessible web experiences. 
+            I enjoy turning complex ideas into elegant, interactive interfaces that perform beautifully on every device.
+        </p>
+    </section>
+
+    <footer class="profile-footer" data-testid="profile-footer">
+        <div class="social-icons" data-testid="social-icons">
+            <a href="https://www.linkedin.com/in/fatanmi-adeniran-21540038b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" aria-label="LinkedIn Profile" data-testid="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/AAdefarati26667" target="_blank" aria-label="Twitter Profile" data-testid="social-twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/AdeniranAdefarati" target="_blank" aria-label="GitHub Profile" data-testid="social-github"><i class="fa-brands fa-github"></i></a>
+
+            <a href="mailto:adefaratiadeniran@gmail.com" aria-label="Send Email" data-testid="social-email"><i class="fa-solid fa-envelope"></i></a>
+
+            <a href="tel:+2349028357042" aria-label="Contact by phone" data-testid="social-contact"><i class="fa-solid fa-phone"></i></a>
+        </div>
+
+        <button class="btn-follow" data-testid="follow-button" aria-pressed="false">
+           Follow
+        </button>
+    </footer>
+    <script src="script.js"></script>
+  </main>
+</body>
+</html>

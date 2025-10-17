@@ -1,0 +1,128 @@
+:root {
+  --bg-top: linear-gradient(160deg, #b24592, #2409c0);
+  --bg-body: #f9f9f9;
+  --text-dark: #333;
+  --text-light: #666;
+  --radius: 1.5rem;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  --primary: #6c63ff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--bg-body);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-card {
+  width: 320px;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-header {
+  position: relative;
+  height: 160px;
+  background: var(--bg-top);
+}
+
+.profile-bg {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: url('wave.svg') no-repeat center/cover;
+}
+
+.profile-img {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.profile-info {
+  padding: 4rem 1rem 1rem;
+}
+
+.profile-info h1 {
+  margin: 0.5rem 0 0;
+  font-size: 1.4rem;
+  color: var(--text-dark);
+}
+
+.username {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.profile-footer {
+  padding: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--primary);
+}
+
+.btn-follow {
+  background: var(--primary);
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-follow:hover,
+.btn-follow:focus {
+  background: #574bff;
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    width: 90%;
+  }
+}
